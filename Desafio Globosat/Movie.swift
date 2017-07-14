@@ -12,6 +12,7 @@ import Contentful
 class Movie: NSObject {
     
     static var contentTypeId: ContentTypeId = "Movie"
+    let entry: Entry
     
     var id: String
     var title: String
@@ -21,6 +22,8 @@ class Movie: NSObject {
     var thumbnail: URL?
     
     required init(_ entry: Entry) {
+        self.entry = entry
+        
         self.id = entry.id
         self.title = entry.fields["title"] as? String ?? "No Title Available"
         self.subtitle = entry.fields["subtitle"] as? String ?? "No Subtitle Available"
