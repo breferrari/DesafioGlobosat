@@ -14,6 +14,7 @@
 		2CC66F681F1819EB0053B90C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC66F661F1819EB0053B90C /* LaunchScreen.storyboard */; };
 		2CC66F731F1819EB0053B90C /* Desafio_GlobosatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC66F721F1819EB0053B90C /* Desafio_GlobosatTests.swift */; };
 		2CC66F7E1F1819EB0053B90C /* Desafio_GlobosatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC66F7D1F1819EB0053B90C /* Desafio_GlobosatUITests.swift */; };
+		F9A026E836EC19F4DF36E24D /* Pods_Desafio_Globosat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A45B9384696B208531D068 /* Pods_Desafio_Globosat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		2CC66F791F1819EB0053B90C /* Desafio GlobosatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desafio GlobosatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC66F7D1F1819EB0053B90C /* Desafio_GlobosatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio_GlobosatUITests.swift; sourceTree = "<group>"; };
 		2CC66F7F1F1819EB0053B90C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A45B9384696B208531D068 /* Pods_Desafio_Globosat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desafio_Globosat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A083EAAD6216A22BD28C9D5C /* Pods-Desafio Globosat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio Globosat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Desafio Globosat/Pods-Desafio Globosat.release.xcconfig"; sourceTree = "<group>"; };
+		D8F3BA9A9BBAB3C2C92BD534 /* Pods-Desafio Globosat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio Globosat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Desafio Globosat/Pods-Desafio Globosat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A026E836EC19F4DF36E24D /* Pods_Desafio_Globosat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				2CC66F711F1819EB0053B90C /* Desafio GlobosatTests */,
 				2CC66F7C1F1819EB0053B90C /* Desafio GlobosatUITests */,
 				2CC66F5B1F1819EB0053B90C /* Products */,
+				FD4464CCC116374076C21898 /* Pods */,
+				5048A84DA0FFC78663F91AC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = "Desafio GlobosatUITests";
 			sourceTree = "<group>";
 		};
+		5048A84DA0FFC78663F91AC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97A45B9384696B208531D068 /* Pods_Desafio_Globosat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD4464CCC116374076C21898 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8F3BA9A9BBAB3C2C92BD534 /* Pods-Desafio Globosat.debug.xcconfig */,
+				A083EAAD6216A22BD28C9D5C /* Pods-Desafio Globosat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CC66F821F1819EB0053B90C /* Build configuration list for PBXNativeTarget "Desafio Globosat" */;
 			buildPhases = (
+				3C279355EE34E1DF27CD4C1A /* [CP] Check Pods Manifest.lock */,
 				2CC66F561F1819EB0053B90C /* Sources */,
 				2CC66F571F1819EB0053B90C /* Frameworks */,
 				2CC66F581F1819EB0053B90C /* Resources */,
+				9072A03B846D5835ED186BEA /* [CP] Embed Pods Frameworks */,
+				23113D434B341417D8DFA99A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23113D434B341417D8DFA99A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Desafio Globosat/Pods-Desafio Globosat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C279355EE34E1DF27CD4C1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9072A03B846D5835ED186BEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Desafio Globosat/Pods-Desafio Globosat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2CC66F561F1819EB0053B90C /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		2CC66F831F1819EB0053B90C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F3BA9A9BBAB3C2C92BD534 /* Pods-Desafio Globosat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HATQPXT843;
@@ -426,6 +502,7 @@
 		};
 		2CC66F841F1819EB0053B90C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A083EAAD6216A22BD28C9D5C /* Pods-Desafio Globosat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HATQPXT843;
