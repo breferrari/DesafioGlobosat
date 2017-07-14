@@ -30,7 +30,12 @@ class GlobosatService: NSObject {
         client.fetchEntries() { [weak self] (result: Result<ArrayResponse<Entry>>) in
             switch result {
             case .success(let array):
-                print("\(array.items[0].fields["title"] ?? "No Title")")
+                
+                var movies: Array<Movie> = []
+                for entry in array.items {
+                    movies.append(Movie(entry))
+                }
+                
             case .error(let error):
                 self?.handle(error: error)
             }

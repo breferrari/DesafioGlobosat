@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C8C675F1F19718F002831E7 /* GlobosatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C675E1F19718F002831E7 /* GlobosatService.swift */; };
+		2C8C67631F1977A5002831E7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C67621F1977A5002831E7 /* Movie.swift */; };
 		2CC66F5E1F1819EB0053B90C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC66F5D1F1819EB0053B90C /* AppDelegate.swift */; };
 		2CC66F601F1819EB0053B90C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC66F5F1F1819EB0053B90C /* ViewController.swift */; };
 		2CC66F631F1819EB0053B90C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC66F611F1819EB0053B90C /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C8C675E1F19718F002831E7 /* GlobosatService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobosatService.swift; sourceTree = "<group>"; };
+		2C8C67621F1977A5002831E7 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		2CC66F5A1F1819EB0053B90C /* Desafio Globosat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio Globosat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC66F5D1F1819EB0053B90C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CC66F5F1F1819EB0053B90C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C8C67601F197787002831E7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2C8C675E1F19718F002831E7 /* GlobosatService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		2C8C67611F19778E002831E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C8C67621F1977A5002831E7 /* Movie.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		2CC66F511F1819EB0053B90C = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +124,8 @@
 		2CC66F5C1F1819EB0053B90C /* Desafio Globosat */ = {
 			isa = PBXGroup;
 			children = (
+				2C8C67611F19778E002831E7 /* Models */,
+				2C8C67601F197787002831E7 /* Service */,
 				2CC66F5D1F1819EB0053B90C /* AppDelegate.swift */,
 				2CC66F5F1F1819EB0053B90C /* ViewController.swift */,
 				2CC66F611F1819EB0053B90C /* Main.storyboard */,
@@ -337,7 +359,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8C675F1F19718F002831E7 /* GlobosatService.swift in Sources */,
 				2CC66F601F1819EB0053B90C /* ViewController.swift in Sources */,
+				2C8C67631F1977A5002831E7 /* Movie.swift in Sources */,
 				2CC66F5E1F1819EB0053B90C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,6 +615,7 @@
 				2CC66F841F1819EB0053B90C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CC66F851F1819EB0053B90C /* Build configuration list for PBXNativeTarget "Desafio GlobosatTests" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +624,7 @@
 				2CC66F871F1819EB0053B90C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CC66F881F1819EB0053B90C /* Build configuration list for PBXNativeTarget "Desafio GlobosatUITests" */ = {
 			isa = XCConfigurationList;
@@ -607,6 +633,7 @@
 				2CC66F8A1F1819EB0053B90C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
