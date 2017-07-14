@@ -22,10 +22,10 @@ class Movie: NSObject {
     
     required init(_ entry: Entry) {
         self.id = entry.id
-        self.title = entry.fields["title"] as? String ?? "No Title"
-        self.subtitle = entry.fields["subtitle"] as? String ?? "No Subtitle"
-        self.duration = entry.fields["duration"] as? String ?? "No Duration"
-        self.synopsis = entry.fields["synopsis"] as? String ?? "No Synopsis"
+        self.title = entry.fields["title"] as? String ?? "No Title Available"
+        self.subtitle = entry.fields["subtitle"] as? String ?? "No Subtitle Available"
+        self.duration = entry.fields["duration"] as? String ?? "No Duration Available"
+        self.synopsis = entry.fields["synopsis"] as? String ?? "No Synopsis Available"
         
         if let thumbnailFields = entry.fields["thumbnail"] as? Link {
             if let thumbnailAsset: Asset = thumbnailFields.asset {
