@@ -26,7 +26,7 @@ class GlobosatService: NSObject {
     // MARK: Contentful Service Client
     let client = Client(spaceId: SPACE_ID, accessToken: ACCESS_TOKEN_DELIVERY)
     
-    func fetch() {
+    func fetchMovies(completion: @escaping (_ movies: Array<Movie>?) -> Void) {
         client.fetchEntries() { [weak self] (result: Result<ArrayResponse<Entry>>) in
             switch result {
             case .success(let array):
@@ -36,8 +36,12 @@ class GlobosatService: NSObject {
                     movies.append(Movie(entry))
                 }
                 
+                completion(movies)
+                
             case .error(let error):
                 self?.handle(error: error)
+                
+                completion(nil)
             }
         }
     }

@@ -99,6 +99,14 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		2C8C67641F199329002831E7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2CC66F5D1F1819EB0053B90C /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
 		2CC66F511F1819EB0053B90C = {
 			isa = PBXGroup;
 			children = (
@@ -124,9 +132,9 @@
 		2CC66F5C1F1819EB0053B90C /* Desafio Globosat */ = {
 			isa = PBXGroup;
 			children = (
-				2C8C67611F19778E002831E7 /* Models */,
+				2C8C67641F199329002831E7 /* AppDelegate */,
 				2C8C67601F197787002831E7 /* Service */,
-				2CC66F5D1F1819EB0053B90C /* AppDelegate.swift */,
+				2C8C67611F19778E002831E7 /* Models */,
 				2CC66F5F1F1819EB0053B90C /* ViewController.swift */,
 				2CC66F611F1819EB0053B90C /* Main.storyboard */,
 				2CC66F661F1819EB0053B90C /* LaunchScreen.storyboard */,
