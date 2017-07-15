@@ -26,6 +26,7 @@ class GlobosatService: NSObject {
     // MARK: Contentful Service Client
     let client = Client(spaceId: SPACE_ID, accessToken: ACCESS_TOKEN_DELIVERY)
     
+    // MARK: Fetch movies from the database
     func fetchMovies(completion: @escaping (_ movies: Array<Movie>?) -> Void) {
         client.fetchEntries() { [weak self] (result: Result<ArrayResponse<Entry>>) in
             switch result {
@@ -39,13 +40,14 @@ class GlobosatService: NSObject {
                 completion(movies)
                 
             case .error(let error):
-                self?.handle(error: error)
                 
+                self?.handle(error: error)
                 completion(nil)
             }
         }
     }
     
+    // MARK: Error Handling
     func handle(error: Error) {
         print("[GlobosatService] Error: \(error)")
     }
