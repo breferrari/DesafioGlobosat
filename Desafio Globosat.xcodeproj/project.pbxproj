@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C172C2E1F1ACABC003B8793 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C172C2D1F1ACABC003B8793 /* Home.storyboard */; };
+		2C172C331F1ACAF9003B8793 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C172C321F1ACAF9003B8793 /* BaseViewController.swift */; };
+		2C172C351F1ACB3E003B8793 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C172C341F1ACB3E003B8793 /* LoginViewController.swift */; };
 		2C8C675F1F19718F002831E7 /* GlobosatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C675E1F19718F002831E7 /* GlobosatService.swift */; };
 		2C8C67631F1977A5002831E7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C67621F1977A5002831E7 /* Movie.swift */; };
 		2C8C67661F19966B002831E7 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C67651F19966B002831E7 /* AuthenticationService.swift */; };
 		2CC66F5E1F1819EB0053B90C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC66F5D1F1819EB0053B90C /* AppDelegate.swift */; };
-		2CC66F601F1819EB0053B90C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC66F5F1F1819EB0053B90C /* ViewController.swift */; };
-		2CC66F631F1819EB0053B90C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC66F611F1819EB0053B90C /* Main.storyboard */; };
+		2CC66F601F1819EB0053B90C /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC66F5F1F1819EB0053B90C /* AuthenticationViewController.swift */; };
+		2CC66F631F1819EB0053B90C /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC66F611F1819EB0053B90C /* Authentication.storyboard */; };
 		2CC66F651F1819EB0053B90C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC66F641F1819EB0053B90C /* Assets.xcassets */; };
 		2CC66F681F1819EB0053B90C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC66F661F1819EB0053B90C /* LaunchScreen.storyboard */; };
 		2CC66F731F1819EB0053B90C /* Desafio_GlobosatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC66F721F1819EB0053B90C /* Desafio_GlobosatTests.swift */; };
@@ -38,13 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C172C2D1F1ACABC003B8793 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		2C172C321F1ACAF9003B8793 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2C172C341F1ACB3E003B8793 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2C8C675E1F19718F002831E7 /* GlobosatService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobosatService.swift; sourceTree = "<group>"; };
 		2C8C67621F1977A5002831E7 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		2C8C67651F19966B002831E7 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		2CC66F5A1F1819EB0053B90C /* Desafio Globosat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio Globosat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC66F5D1F1819EB0053B90C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CC66F5F1F1819EB0053B90C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2CC66F621F1819EB0053B90C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CC66F5F1F1819EB0053B90C /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		2CC66F621F1819EB0053B90C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Authentication.storyboard; sourceTree = "<group>"; };
 		2CC66F641F1819EB0053B90C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CC66F671F1819EB0053B90C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CC66F691F1819EB0053B90C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,13 +91,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C8C67601F197787002831E7 /* Service */ = {
+		2C172C2B1F1ACA65003B8793 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				2C8C67671F199E84002831E7 /* ViewControllers */,
+				2CC66F611F1819EB0053B90C /* Authentication.storyboard */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		2C172C2C1F1ACAA6003B8793 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2C172C301F1ACAD9003B8793 /* ViewControllers */,
+				2C172C2D1F1ACABC003B8793 /* Home.storyboard */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		2C172C2F1F1ACACA003B8793 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		2C172C301F1ACAD9003B8793 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2C172C311F1ACAE1003B8793 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2C172C321F1ACAF9003B8793 /* BaseViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		2C8C67601F197787002831E7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				2C8C67651F19966B002831E7 /* AuthenticationService.swift */,
 				2C8C675E1F19718F002831E7 /* GlobosatService.swift */,
 			);
-			name = Service;
+			name = Services;
 			sourceTree = "<group>";
 		};
 		2C8C67611F19778E002831E7 /* Models */ = {
@@ -108,6 +154,15 @@
 				2CC66F5D1F1819EB0053B90C /* AppDelegate.swift */,
 			);
 			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2C8C67671F199E84002831E7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CC66F5F1F1819EB0053B90C /* AuthenticationViewController.swift */,
+				2C172C341F1ACB3E003B8793 /* LoginViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		2CC66F511F1819EB0053B90C = {
@@ -136,10 +191,12 @@
 			isa = PBXGroup;
 			children = (
 				2C8C67641F199329002831E7 /* AppDelegate */,
-				2C8C67601F197787002831E7 /* Service */,
+				2C8C67601F197787002831E7 /* Services */,
 				2C8C67611F19778E002831E7 /* Models */,
-				2CC66F5F1F1819EB0053B90C /* ViewController.swift */,
-				2CC66F611F1819EB0053B90C /* Main.storyboard */,
+				2C172C2F1F1ACACA003B8793 /* Utils */,
+				2C172C311F1ACAE1003B8793 /* Base */,
+				2C172C2B1F1ACA65003B8793 /* Authentication */,
+				2C172C2C1F1ACAA6003B8793 /* Home */,
 				2CC66F661F1819EB0053B90C /* LaunchScreen.storyboard */,
 				2CC66F641F1819EB0053B90C /* Assets.xcassets */,
 				2CC66F691F1819EB0053B90C /* Info.plist */,
@@ -297,7 +354,8 @@
 			files = (
 				2CC66F681F1819EB0053B90C /* LaunchScreen.storyboard in Resources */,
 				2CC66F651F1819EB0053B90C /* Assets.xcassets in Resources */,
-				2CC66F631F1819EB0053B90C /* Main.storyboard in Resources */,
+				2CC66F631F1819EB0053B90C /* Authentication.storyboard in Resources */,
+				2C172C2E1F1ACABC003B8793 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,11 +428,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C172C351F1ACB3E003B8793 /* LoginViewController.swift in Sources */,
 				2C8C675F1F19718F002831E7 /* GlobosatService.swift in Sources */,
-				2CC66F601F1819EB0053B90C /* ViewController.swift in Sources */,
+				2CC66F601F1819EB0053B90C /* AuthenticationViewController.swift in Sources */,
 				2C8C67631F1977A5002831E7 /* Movie.swift in Sources */,
 				2CC66F5E1F1819EB0053B90C /* AppDelegate.swift in Sources */,
 				2C8C67661F19966B002831E7 /* AuthenticationService.swift in Sources */,
+				2C172C331F1ACAF9003B8793 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,12 +470,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2CC66F611F1819EB0053B90C /* Main.storyboard */ = {
+		2CC66F611F1819EB0053B90C /* Authentication.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2CC66F621F1819EB0053B90C /* Base */,
 			);
-			name = Main.storyboard;
+			name = Authentication.storyboard;
 			sourceTree = "<group>";
 		};
 		2CC66F661F1819EB0053B90C /* LaunchScreen.storyboard */ = {

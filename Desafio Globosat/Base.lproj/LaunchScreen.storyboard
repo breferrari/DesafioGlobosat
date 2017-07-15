@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,22 +21,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desafio Globosat" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HW4-SX-3Dg">
-                                <rect key="frame" x="101" y="312.66666666666669" width="212" height="111"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globosat-logo" translatesAutoresizingMaskIntoConstraints="NO" id="o59-as-YY2">
+                                <rect key="frame" x="139" y="356" width="137" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="111" id="LGS-j4-vSz"/>
+                                    <constraint firstAttribute="height" constant="24" id="3ZS-ao-xM0"/>
+                                    <constraint firstAttribute="width" constant="137" id="ReU-sr-NOr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="HW4-SX-3Dg" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="PZV-ww-Ae1"/>
-                            <constraint firstItem="HW4-SX-3Dg" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="81" id="Zup-Gn-zMO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HW4-SX-3Dg" secondAttribute="trailing" constant="81" id="b7J-4A-Aor"/>
-                            <constraint firstItem="HW4-SX-3Dg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vzX-bu-Fao"/>
+                            <constraint firstItem="o59-as-YY2" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Vdu-LS-vmF"/>
+                            <constraint firstItem="o59-as-YY2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sRc-3r-XXB"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -46,4 +41,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="globosat-logo" width="137" height="24"/>
+    </resources>
 </document>

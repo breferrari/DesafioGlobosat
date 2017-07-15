@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tF2-Ki-sUn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Authentication View Controller-->
+        <scene sceneID="4KM-sd-sbf">
+            <objects>
+                <viewController id="tF2-Ki-sUn" customClass="AuthenticationViewController" customModule="Desafio_Globosat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sfq-7u-TZ5"/>
+                        <viewControllerLayoutGuide type="bottom" id="agY-sg-Ibu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qOG-fC-wdH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globosat-logo" translatesAutoresizingMaskIntoConstraints="NO" id="9S6-K1-ysg">
+                                <rect key="frame" x="119" y="321.5" width="137" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="bFw-Ip-itG"/>
+                                    <constraint firstAttribute="height" constant="24" id="jeY-Ot-2pd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9S6-K1-ysg" firstAttribute="centerX" secondItem="qOG-fC-wdH" secondAttribute="centerX" id="7gR-1p-PHw"/>
+                            <constraint firstItem="9S6-K1-ysg" firstAttribute="centerY" secondItem="qOG-fC-wdH" secondAttribute="centerY" id="d3N-9x-t8b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="Vy7-Um-LCc" kind="presentation" identifier="HomeSegue" id="lTb-f7-PFe"/>
+                        <segue destination="SUt-8k-fb9" kind="presentation" identifier="LoginSegue" id="3ev-PB-sQK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULM-z9-m6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="148"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="dda-UC-hwG">
+            <objects>
+                <viewController id="SUt-8k-fb9" customClass="LoginViewController" customModule="Desafio_Globosat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bhK-np-vSd"/>
+                        <viewControllerLayoutGuide type="bottom" id="WkJ-Cb-47o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oCq-6Y-o1t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zbh-Wu-1ew">
+                                <rect key="frame" x="31" y="205.5" width="313" height="256"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lZV-cD-Kce">
+                                        <rect key="frame" x="30" y="53" width="253" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q3i-Ol-QhM">
+                                        <rect key="frame" x="30" y="113" width="253" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbX-P1-Deu">
+                                        <rect key="frame" x="30" y="173" width="253" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginAction:" destination="SUt-8k-fb9" eventType="touchUpInside" id="NJq-bU-gO6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="lZV-cD-Kce" firstAttribute="top" secondItem="Zbh-Wu-1ew" secondAttribute="top" constant="53" id="9Hz-Qb-V7L"/>
+                                    <constraint firstItem="q3i-Ol-QhM" firstAttribute="leading" secondItem="Zbh-Wu-1ew" secondAttribute="leading" constant="30" id="Ana-5S-CNN"/>
+                                    <constraint firstAttribute="trailing" secondItem="lZV-cD-Kce" secondAttribute="trailing" constant="30" id="Eps-9V-hc7"/>
+                                    <constraint firstItem="lZV-cD-Kce" firstAttribute="leading" secondItem="Zbh-Wu-1ew" secondAttribute="leading" constant="30" id="M6H-ay-AA4"/>
+                                    <constraint firstItem="q3i-Ol-QhM" firstAttribute="top" secondItem="lZV-cD-Kce" secondAttribute="bottom" constant="30" id="bc2-c1-yo3"/>
+                                    <constraint firstItem="PbX-P1-Deu" firstAttribute="leading" secondItem="Zbh-Wu-1ew" secondAttribute="leading" constant="30" id="iJn-pa-g1l"/>
+                                    <constraint firstItem="PbX-P1-Deu" firstAttribute="top" secondItem="q3i-Ol-QhM" secondAttribute="bottom" constant="30" id="kE6-G8-duG"/>
+                                    <constraint firstAttribute="trailing" secondItem="q3i-Ol-QhM" secondAttribute="trailing" constant="30" id="ktB-ML-7Gc"/>
+                                    <constraint firstItem="q3i-Ol-QhM" firstAttribute="centerY" secondItem="Zbh-Wu-1ew" secondAttribute="centerY" id="tia-hv-0ch"/>
+                                    <constraint firstAttribute="trailing" secondItem="PbX-P1-Deu" secondAttribute="trailing" constant="30" id="vee-TI-RfG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zbh-Wu-1ew" secondAttribute="trailing" constant="15" id="XRR-uR-2qb"/>
+                            <constraint firstItem="Zbh-Wu-1ew" firstAttribute="centerX" secondItem="oCq-6Y-o1t" secondAttribute="centerX" id="cr1-TJ-Zcg"/>
+                            <constraint firstItem="Zbh-Wu-1ew" firstAttribute="centerY" secondItem="oCq-6Y-o1t" secondAttribute="centerY" id="i9y-C5-OdL"/>
+                            <constraint firstItem="Zbh-Wu-1ew" firstAttribute="leading" secondItem="oCq-6Y-o1t" secondAttribute="leadingMargin" constant="15" id="q3U-1R-sgS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="PbX-P1-Deu" id="mgp-7z-vAh"/>
+                        <outlet property="passwordTextField" destination="q3i-Ol-QhM" id="A0f-sn-cgu"/>
+                        <outlet property="userTextField" destination="lZV-cD-Kce" id="T2Y-0D-75v"/>
+                        <segue destination="Vy7-Um-LCc" kind="presentation" identifier="HomeSegue" id="AYk-yw-0iE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqM-Vv-QEB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983" y="148"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="6Sm-VE-Uzo">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="HomeStoryboard" storyboardName="Home" id="Vy7-Um-LCc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJx-dk-9PK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="603"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="globosat-logo" width="137" height="24"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="AYk-yw-0iE"/>
+    </inferredMetricsTieBreakers>
+</document>
