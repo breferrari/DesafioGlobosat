@@ -10,6 +10,7 @@
 		2C172C2E1F1ACABC003B8793 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C172C2D1F1ACABC003B8793 /* Home.storyboard */; };
 		2C172C331F1ACAF9003B8793 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C172C321F1ACAF9003B8793 /* BaseViewController.swift */; };
 		2C172C351F1ACB3E003B8793 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C172C341F1ACB3E003B8793 /* LoginViewController.swift */; };
+		2C172C371F1AD5D6003B8793 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C172C361F1AD5D6003B8793 /* AppManager.swift */; };
 		2C8C675F1F19718F002831E7 /* GlobosatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C675E1F19718F002831E7 /* GlobosatService.swift */; };
 		2C8C67631F1977A5002831E7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C67621F1977A5002831E7 /* Movie.swift */; };
 		2C8C67661F19966B002831E7 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C67651F19966B002831E7 /* AuthenticationService.swift */; };
@@ -44,6 +45,7 @@
 		2C172C2D1F1ACABC003B8793 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2C172C321F1ACAF9003B8793 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2C172C341F1ACB3E003B8793 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2C172C361F1AD5D6003B8793 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		2C8C675E1F19718F002831E7 /* GlobosatService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobosatService.swift; sourceTree = "<group>"; };
 		2C8C67621F1977A5002831E7 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		2C8C67651F19966B002831E7 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		2C172C2F1F1ACACA003B8793 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2C172C361F1AD5D6003B8793 /* AppManager.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				2CC66F5E1F1819EB0053B90C /* AppDelegate.swift in Sources */,
 				2C8C67661F19966B002831E7 /* AuthenticationService.swift in Sources */,
 				2C172C331F1ACAF9003B8793 /* BaseViewController.swift in Sources */,
+				2C172C371F1AD5D6003B8793 /* AppManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
