@@ -15,9 +15,6 @@ class AuthenticationViewController: BaseViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        // TODO: Remove this later
-        authentication.isLoggedIn = false
-        
         checkLogin()
     }
     

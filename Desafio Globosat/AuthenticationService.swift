@@ -44,7 +44,7 @@ class AuthenticationService: NSObject {
         
     }
     
-    func logOff(completion: @escaping () -> Void) {
+    func logoff(completion: @escaping () -> Void) {
         isLoggedIn = false
         
         // Using a timer to simulate network

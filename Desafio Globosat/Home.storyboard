@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Home Navigation Controller-->
         <scene sceneID="V9d-Qd-dSE">
             <objects>
-                <navigationController id="DFj-pb-Uki" sceneMemberID="viewController">
+                <navigationController id="DFj-pb-Uki" customClass="HomeNavigationController" customModule="Desafio_Globosat" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ezd-Sx-X87">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-1581" y="-206"/>
         </scene>
-        <!--Item 2-->
+        <!--My List-->
         <scene sceneID="sYd-s5-jK2">
             <objects>
-                <viewController id="5Df-ft-CdN" sceneMemberID="viewController">
+                <viewController id="5Df-ft-CdN" customClass="MyListViewController" customModule="Desafio_Globosat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r5s-TM-7PD"/>
                         <viewControllerLayoutGuide type="bottom" id="uVk-2o-UFb"/>
@@ -36,18 +36,30 @@
                     <view key="view" contentMode="scaleToFill" id="6wG-SQ-mWv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nq3-Ui-ruH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nq3-Ui-ruH" firstAttribute="top" secondItem="6wG-SQ-mWv" secondAttribute="top" id="M3T-8y-mGV"/>
+                            <constraint firstItem="nq3-Ui-ruH" firstAttribute="leading" secondItem="6wG-SQ-mWv" secondAttribute="leading" id="TIr-yK-PPe"/>
+                            <constraint firstAttribute="trailing" secondItem="nq3-Ui-ruH" secondAttribute="trailing" id="bRA-xN-PTB"/>
+                            <constraint firstAttribute="bottom" secondItem="nq3-Ui-ruH" secondAttribute="bottom" id="gef-vV-cBX"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Lq2-3R-KMm"/>
+                    <tabBarItem key="tabBarItem" title="My List" image="favorite-icon" id="Lq2-3R-KMm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBS-KN-K6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="463" y="123"/>
+            <point key="canvasLocation" x="461.60000000000002" y="122.78860569715144"/>
         </scene>
-        <!--Item 1-->
+        <!--Movies-->
         <scene sceneID="2qU-99-8Qz">
             <objects>
-                <viewController id="448-6X-BFm" sceneMemberID="viewController">
+                <viewController id="448-6X-BFm" customClass="MoviesViewController" customModule="Desafio_Globosat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mrw-vV-Znd"/>
                         <viewControllerLayoutGuide type="bottom" id="14X-vT-sVW"/>
@@ -55,18 +67,30 @@
                     <view key="view" contentMode="scaleToFill" id="9Rr-Lg-db7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z0K-Dc-BPW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z0K-Dc-BPW" firstAttribute="leading" secondItem="9Rr-Lg-db7" secondAttribute="leading" id="Bbc-lM-FHL"/>
+                            <constraint firstItem="z0K-Dc-BPW" firstAttribute="top" secondItem="9Rr-Lg-db7" secondAttribute="top" id="J6w-mc-ZXk"/>
+                            <constraint firstAttribute="trailing" secondItem="z0K-Dc-BPW" secondAttribute="trailing" id="UaE-F8-EXs"/>
+                            <constraint firstAttribute="bottom" secondItem="z0K-Dc-BPW" secondAttribute="bottom" id="f0P-XQ-RnE"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="KVw-7l-cJX"/>
+                    <tabBarItem key="tabBarItem" title="Movies" image="movie-icon" id="KVw-7l-cJX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfv-qa-SBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="463" y="-532"/>
+            <point key="canvasLocation" x="461.60000000000002" y="-532.98350824587715"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home Tab Bar Controller-->
         <scene sceneID="ht5-AG-DyV">
             <objects>
-                <tabBarController id="Eeg-10-R0W" sceneMemberID="viewController">
+                <tabBarController id="Eeg-10-R0W" customClass="HomeTabBarController" customModule="Desafio_Globosat" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="pCn-hh-8S0"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="1IL-Oi-PUj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -83,4 +107,8 @@
             <point key="canvasLocation" x="-487" y="-205"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="favorite-icon" width="30" height="30"/>
+        <image name="movie-icon" width="30" height="30"/>
+    </resources>
 </document>
