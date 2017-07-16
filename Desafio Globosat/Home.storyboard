@@ -9,11 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home Navigation Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="V9d-Qd-dSE">
             <objects>
-                <navigationController id="DFj-pb-Uki" customClass="HomeNavigationController" customModule="Desafio_Globosat" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="ezd-Sx-X87">
+                <navigationController id="DFj-pb-Uki" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ezd-Sx-X87">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
