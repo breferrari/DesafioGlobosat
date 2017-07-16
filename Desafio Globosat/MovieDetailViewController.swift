@@ -7,29 +7,34 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MovieDetailViewController: BaseViewController {
 
+    @IBOutlet weak var thumbnailImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var synopsisTextView: UITextView!
+    
+    var movie: Movie?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        configureMovieDetail()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func configureMovieDetail() {
+        if let movie = movie {
+            thumbnailImageView.sd_setShowActivityIndicatorView(true)
+            thumbnailImageView.sd_setIndicatorStyle(UIActivityIndicatorViewStyle.gray)
+            self.thumbnailImageView.sd_setImage(with: movie.thumbnail)
+            
+            self.titleLabel.text = movie.title
+            self.subtitleLabel.text = movie.subtitle
+            self.durationLabel.text = movie.duration
+            self.synopsisTextView.text = movie.synopsis
+        }
     }
-    */
 
 }
