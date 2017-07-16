@@ -5,6 +5,7 @@ use_frameworks!
 
 def ui
     pod 'SVProgressHUD'
+    pod 'SDWebImage'
 end
 
 def orm

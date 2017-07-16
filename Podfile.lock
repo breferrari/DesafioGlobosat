@@ -12,11 +12,15 @@ PODS:
   - Realm (2.8.3):
     - Realm/Headers (= 2.8.3)
   - Realm/Headers (2.8.3)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
   - Contentful
   - Realm
+  - SDWebImage
   - SVProgressHUD
 
 SPEC CHECKSUMS:
@@ -24,8 +28,9 @@ SPEC CHECKSUMS:
   Interstellar: 63a760ff3a3657f791a4523de4b89727c51edec3
   ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
   Realm: 3601ef091c8c499a31101d8563b991e75546cdce
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: cc160b7691b7c72e8c7fbd3a954428dd11b8fe99
+PODFILE CHECKSUM: 70138f80f5b8a28afa6031e9270027bf20b44523
 
 COCOAPODS: 1.2.1

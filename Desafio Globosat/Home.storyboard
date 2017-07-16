@@ -38,8 +38,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nq3-Ui-ruH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="5Df-ft-CdN" id="ZU1-gt-dOi"/>
+                                    <outlet property="delegate" destination="5Df-ft-CdN" id="xrw-jK-RUM"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,10 +51,13 @@
                             <constraint firstItem="nq3-Ui-ruH" firstAttribute="top" secondItem="6wG-SQ-mWv" secondAttribute="top" id="M3T-8y-mGV"/>
                             <constraint firstItem="nq3-Ui-ruH" firstAttribute="leading" secondItem="6wG-SQ-mWv" secondAttribute="leading" id="TIr-yK-PPe"/>
                             <constraint firstAttribute="trailing" secondItem="nq3-Ui-ruH" secondAttribute="trailing" id="bRA-xN-PTB"/>
-                            <constraint firstAttribute="bottom" secondItem="nq3-Ui-ruH" secondAttribute="bottom" id="gef-vV-cBX"/>
+                            <constraint firstAttribute="bottom" secondItem="nq3-Ui-ruH" secondAttribute="bottom" constant="49" id="gef-vV-cBX"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="My List" image="favorite-icon" id="Lq2-3R-KMm"/>
+                    <connections>
+                        <outlet property="myListTableView" destination="nq3-Ui-ruH" id="Kyz-QV-eBb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBS-KN-K6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,8 +76,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z0K-Dc-BPW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="448-6X-BFm" id="PMj-Px-TdW"/>
+                                    <outlet property="delegate" destination="448-6X-BFm" id="yXT-8c-8C8"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -78,10 +89,13 @@
                             <constraint firstItem="z0K-Dc-BPW" firstAttribute="leading" secondItem="9Rr-Lg-db7" secondAttribute="leading" id="Bbc-lM-FHL"/>
                             <constraint firstItem="z0K-Dc-BPW" firstAttribute="top" secondItem="9Rr-Lg-db7" secondAttribute="top" id="J6w-mc-ZXk"/>
                             <constraint firstAttribute="trailing" secondItem="z0K-Dc-BPW" secondAttribute="trailing" id="UaE-F8-EXs"/>
-                            <constraint firstAttribute="bottom" secondItem="z0K-Dc-BPW" secondAttribute="bottom" id="f0P-XQ-RnE"/>
+                            <constraint firstAttribute="bottom" secondItem="z0K-Dc-BPW" secondAttribute="bottom" constant="49" id="f0P-XQ-RnE"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Movies" image="movie-icon" id="KVw-7l-cJX"/>
+                    <connections>
+                        <outlet property="moviesTableView" destination="z0K-Dc-BPW" id="g4E-Jn-kcm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfv-qa-SBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

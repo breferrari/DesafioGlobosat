@@ -34,7 +34,7 @@ class Movie: NSObject {
             if let thumbnailAsset: Asset = thumbnailFields.asset {
                 if let file = thumbnailAsset.fields["file"] as? [String:Any] {
                     if let urlString = file["url"] as? String {
-                        self.thumbnail = URL(string: "http://\(urlString)")!
+                        self.thumbnail = URL(string: "http:\(urlString)")!
                     }
                 }
             }
