@@ -50,8 +50,16 @@ class MyListViewController: BaseViewController, UITableViewDelegate, UITableView
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination.isKind(of: MovieDetailViewController.classForCoder()) && sender != nil {
+            let destionation = segue.destination as! MovieDetailViewController
+            let movie = Movie(sender as! MyListMovie)
+            destionation.movie = movie
+        }
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO: Open Movie Details
+        performSegue(withIdentifier: "MovieDetailSegue", sender: movies[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

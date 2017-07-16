@@ -12,7 +12,7 @@ import Contentful
 class Movie: NSObject {
     
     static var contentTypeId: ContentTypeId = "Movie"
-    let entry: Entry
+    let entry: Entry?
     
     var id: String
     var title: String
@@ -21,7 +21,7 @@ class Movie: NSObject {
     var synopsis: String
     var thumbnail: URL?
     
-    required init(_ entry: Entry) {
+    init(_ entry: Entry) {
         self.entry = entry
         
         self.id = entry.id
@@ -39,5 +39,21 @@ class Movie: NSObject {
                 }
             }
         }
+    }
+    
+    init(_ myListMovie: MyListMovie) {
+        self.entry = nil
+        
+        self.id = "\(myListMovie.id)"
+        self.title = myListMovie.title
+        self.subtitle = myListMovie.subtitle
+        self.duration = myListMovie.duration
+        self.synopsis = myListMovie.synopsis
+        
+        let thumbnail = myListMovie.thumbnail
+        if thumbnail != "" {
+            self.thumbnail = URL(string: thumbnail)
+        }
+        
     }
 }

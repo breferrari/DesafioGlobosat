@@ -18,6 +18,9 @@ class MovieDetailViewController: BaseViewController {
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var synopsisTextView: UITextView!
     
+    @IBOutlet weak var watchedView: UIView!
+    @IBOutlet weak var watchedSwitch: UISwitch!
+    
     var movie: Movie?
     var myListMovie: MyListMovie?
     
@@ -32,9 +35,15 @@ class MovieDetailViewController: BaseViewController {
             isMovieOnMyList = persistance.isMovieOnMyList(name: movie.title)
             
             if isMovieOnMyList {
+                watchedView.isHidden = false
                 persistance.fetchMovieNamed(movie.title, completion: { [weak self] (movies) in
                     self?.myListMovie = movies.first
+                    if let myListMovie = self?.myListMovie {
+                        self?.watchedSwitch.isOn = myListMovie.didWatch
+                    }
                 })
+            } else {
+                watchedView.isHidden = true
             }
         }
         
@@ -68,10 +77,14 @@ class MovieDetailViewController: BaseViewController {
         if !isMovieOnMyList {
             if let movie = movie {
                 myListMovie = MyListMovie(movie)
+                if let myListMovie = self.myListMovie {
+                    watchedSwitch.isOn = myListMovie.didWatch
+                }
                 
                 if let myListMovie = myListMovie {
                     persistance.addOrUpdateMovie(myListMovie)
                     isMovieOnMyList = true
+                    watchIsHidden(false)
                     configureNavigationBar()
                 }
                 
@@ -85,9 +98,20 @@ class MovieDetailViewController: BaseViewController {
                 persistance.deleteMovie(myListMovie)
                 self.myListMovie = nil
                 isMovieOnMyList = false
+                watchIsHidden(true)
                 configureNavigationBar()
             }
         }
+    }
+    
+    func watchIsHidden(_ value: Bool) {
+        UIView.animate(withDuration: 0.5) { 
+            self.watchedView.isHidden = value
+        }
+    }
+    
+    @IBAction func watchedAction(_ sender: UISwitch) {
+        
     }
 
 }

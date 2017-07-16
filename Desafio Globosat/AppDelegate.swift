@@ -17,10 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        let defaultPath = Realm.Configuration.defaultConfiguration.fileURL
-        try! FileManager.default.removeItem(at: defaultPath!)
-        
         return true
     }
 

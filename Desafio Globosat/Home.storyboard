@@ -80,7 +80,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hhC-BJ-XcM">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="578"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="628"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOP-DJ-4DN" userLabel="Header View">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
@@ -100,8 +100,39 @@
                                                     <constraint firstItem="CSI-A7-iW4" firstAttribute="centerY" secondItem="aOP-DJ-4DN" secondAttribute="centerY" id="fKk-47-Na3"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HEr-Cs-V68" userLabel="Title View">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0e5-Fb-w40" userLabel="Watched View">
                                                 <rect key="frame" x="0.0" y="300" width="375" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watched" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pT-EU-uWz">
+                                                        <rect key="frame" x="177.5" y="15.5" width="68.5" height="20.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20.5" id="Mka-fh-UBG"/>
+                                                            <constraint firstAttribute="width" constant="68.5" id="u3r-3q-pw7"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OO2-9S-3ep">
+                                                        <rect key="frame" x="120" y="10" width="51" height="31"/>
+                                                        <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <action selector="watchedAction:" destination="mcQ-j0-Wvf" eventType="valueChanged" id="AxT-Oi-9ks"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="6J7-kf-R2c"/>
+                                                    <constraint firstItem="OO2-9S-3ep" firstAttribute="centerX" secondItem="0e5-Fb-w40" secondAttribute="centerX" constant="-43" id="7Lt-3k-wfM"/>
+                                                    <constraint firstItem="2pT-EU-uWz" firstAttribute="centerX" secondItem="0e5-Fb-w40" secondAttribute="centerX" constant="24.25" id="HDh-1l-wQ6"/>
+                                                    <constraint firstItem="OO2-9S-3ep" firstAttribute="centerY" secondItem="0e5-Fb-w40" secondAttribute="centerY" id="Kf7-hj-HqM"/>
+                                                    <constraint firstItem="2pT-EU-uWz" firstAttribute="leading" secondItem="OO2-9S-3ep" secondAttribute="trailing" constant="8.5" id="VKO-Nc-et7"/>
+                                                    <constraint firstItem="2pT-EU-uWz" firstAttribute="centerY" secondItem="0e5-Fb-w40" secondAttribute="centerY" id="xiW-jX-oln"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HEr-Cs-V68" userLabel="Title View">
+                                                <rect key="frame" x="0.0" y="350" width="375" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Title&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IP-br-hdK">
                                                         <rect key="frame" x="15" y="5" width="345" height="40"/>
@@ -120,7 +151,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OlL-s9-HNw" userLabel="Subtitle View">
-                                                <rect key="frame" x="0.0" y="350" width="375" height="50"/>
+                                                <rect key="frame" x="0.0" y="400" width="375" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Subtitle&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCe-6r-TqW">
                                                         <rect key="frame" x="15" y="5" width="345" height="40"/>
@@ -139,7 +170,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfJ-uQ-N2x" userLabel="Duration View">
-                                                <rect key="frame" x="0.0" y="400" width="375" height="50"/>
+                                                <rect key="frame" x="0.0" y="450" width="375" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Duration&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zh0-hU-ddC">
                                                         <rect key="frame" x="15" y="5" width="345" height="40"/>
@@ -158,7 +189,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zoE-5M-KKH" userLabel="Synopsis View">
-                                                <rect key="frame" x="0.0" y="450" width="375" height="128"/>
+                                                <rect key="frame" x="0.0" y="500" width="375" height="128"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hHr-J1-MCY">
                                                         <rect key="frame" x="5" y="5" width="365" height="118"/>
@@ -205,6 +236,8 @@
                         <outlet property="synopsisTextView" destination="hHr-J1-MCY" id="MyB-fY-vor"/>
                         <outlet property="thumbnailImageView" destination="CSI-A7-iW4" id="pDI-d6-zW3"/>
                         <outlet property="titleLabel" destination="3IP-br-hdK" id="efw-zE-cAD"/>
+                        <outlet property="watchedSwitch" destination="OO2-9S-3ep" id="FIy-TW-7da"/>
+                        <outlet property="watchedView" destination="0e5-Fb-w40" id="9zr-8g-rGO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KuR-gL-mpE" userLabel="First Responder" sceneMemberID="firstResponder"/>
