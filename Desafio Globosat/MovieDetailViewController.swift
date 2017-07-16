@@ -111,7 +111,11 @@ class MovieDetailViewController: BaseViewController {
     }
     
     @IBAction func watchedAction(_ sender: UISwitch) {
-        
+        if let myListMovie = myListMovie {
+            try! persistance.realm.write {
+                myListMovie.didWatch = sender.isOn
+            }
+        }
     }
 
 }
