@@ -40,4 +40,13 @@ class MovieTableViewCell: UITableViewCell {
         durationLabel.text = movie.duration
     }
     
+    func setMyListMovie(_ movie: MyListMovie) {
+        thumbnailImageView.sd_setShowActivityIndicatorView(true)
+        thumbnailImageView.sd_setIndicatorStyle(UIActivityIndicatorViewStyle.gray)
+        thumbnailImageView.sd_setImage(with: URL(string: movie.thumbnail))
+        titleLabel.text = movie.title
+        subtitleLabel.text = movie.subtitle
+        durationLabel.text = movie.duration
+    }
+    
 }

@@ -42,7 +42,8 @@ class MovieDetailViewController: BaseViewController {
     }
     
     func addToMyList() {
-        
+        let myListMovie = MyListMovie(movie!)
+        persistance.addOrUpdateMovie(myListMovie)
     }
 
 }

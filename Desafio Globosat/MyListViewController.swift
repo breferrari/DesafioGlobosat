@@ -8,22 +8,44 @@
 
 import UIKit
 
-class MyListViewController: BaseViewController, UITableViewDelegate {
+class MyListViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var myListTableView: UITableView!
     
-    var movies: Array<Movie> = []
+    let persistance = PersistanceService.shared
+    
+    var movies: Array<MyListMovie> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadMovies()
     }
     
     func configureTableView() {
         myListTableView.register(UINib(nibName: "MovieTableViewCell", bundle: nil), forCellReuseIdentifier: MovieTableViewCell.cellIdentifier())
         myListTableView.estimatedRowHeight = 160
         myListTableView.rowHeight = UITableViewAutomaticDimension
+    }
+    
+    func loadMovies() {
+        self.showLoading()
+        movies = []
+        persistance.fetchMovies { [weak self] (movies) in
+            for movie in movies {
+                self?.movies.append(movie)
+                
+                DispatchQueue.main.async {
+                    self?.myListTableView.reloadData()
+                }
+            }
+            
+            self?.hideLoading()
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -39,7 +61,7 @@ class MyListViewController: BaseViewController, UITableViewDelegate {
         let cell = myListTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! MovieTableViewCell
         
         let movie = movies[indexPath.row]
-        cell.setMovie(movie)
+        cell.setMyListMovie(movie)
         
         return cell
     }
