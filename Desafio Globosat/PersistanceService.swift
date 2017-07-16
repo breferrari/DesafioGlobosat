@@ -30,11 +30,11 @@ class PersistanceService: NSObject {
     }
     
     func fetchMovieNamed(_ name: String, completion: (Results<MyListMovie>) -> Void) {
-        completion(realm.objects(MyListMovie.self).filter("title == '\(name)'"))
+        completion(realm.objects(MyListMovie.self).filter("title == %@", name))
     }
     
     func isMovieOnMyList(name: String) -> Bool {
-        let objects = realm.objects(MyListMovie.self).filter("title == '\(name)'")
+        let objects = realm.objects(MyListMovie.self).filter("title == %@", name)
         return objects.count > 0
     }
     
