@@ -9,7 +9,7 @@ def ui
 end
 
 def orm
-    pod 'Realm'
+    pod 'RealmSwift'
 end
 
 def networking

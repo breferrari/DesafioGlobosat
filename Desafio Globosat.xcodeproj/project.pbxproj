@@ -19,6 +19,8 @@
 		2C328B2B1F1B61F7005C0901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C328B2A1F1B61F7005C0901 /* Assets.xcassets */; };
 		2C3729ED1F1B66EE000D4373 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3729EB1F1B66EE000D4373 /* MovieTableViewCell.swift */; };
 		2C3729EE1F1B66EE000D4373 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3729EC1F1B66EE000D4373 /* MovieTableViewCell.xib */; };
+		2C3729F01F1B882C000D4373 /* MyListMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3729EF1F1B882C000D4373 /* MyListMovie.swift */; };
+		2C3729F21F1B89B4000D4373 /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3729F11F1B89B4000D4373 /* PersistanceService.swift */; };
 		2C8C675F1F19718F002831E7 /* GlobosatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C675E1F19718F002831E7 /* GlobosatService.swift */; };
 		2C8C67631F1977A5002831E7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C67621F1977A5002831E7 /* Movie.swift */; };
 		2C8C67661F19966B002831E7 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C67651F19966B002831E7 /* AuthenticationService.swift */; };
@@ -61,6 +63,8 @@
 		2C328B2A1F1B61F7005C0901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C3729EB1F1B66EE000D4373 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		2C3729EC1F1B66EE000D4373 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		2C3729EF1F1B882C000D4373 /* MyListMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyListMovie.swift; sourceTree = "<group>"; };
+		2C3729F11F1B89B4000D4373 /* PersistanceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistanceService.swift; sourceTree = "<group>"; };
 		2C8C675E1F19718F002831E7 /* GlobosatService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobosatService.swift; sourceTree = "<group>"; };
 		2C8C67621F1977A5002831E7 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		2C8C67651F19966B002831E7 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 			children = (
 				2C8C67651F19966B002831E7 /* AuthenticationService.swift */,
 				2C8C675E1F19718F002831E7 /* GlobosatService.swift */,
+				2C3729F11F1B89B4000D4373 /* PersistanceService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				2C8C67621F1977A5002831E7 /* Movie.swift */,
+				2C3729EF1F1B882C000D4373 /* MyListMovie.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -482,6 +488,8 @@
 				2C3729ED1F1B66EE000D4373 /* MovieTableViewCell.swift in Sources */,
 				2C8C675F1F19718F002831E7 /* GlobosatService.swift in Sources */,
 				2CC66F601F1819EB0053B90C /* AuthenticationViewController.swift in Sources */,
+				2C3729F21F1B89B4000D4373 /* PersistanceService.swift in Sources */,
+				2C3729F01F1B882C000D4373 /* MyListMovie.swift in Sources */,
 				2C328B291F1AD98D005C0901 /* MovieDetailViewController.swift in Sources */,
 				2C8C67631F1977A5002831E7 /* Movie.swift in Sources */,
 				2C328B231F1AD956005C0901 /* HomeTabBarController.swift in Sources */,

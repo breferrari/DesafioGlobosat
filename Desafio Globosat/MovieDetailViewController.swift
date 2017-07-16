@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import RealmSwift
 
 class MovieDetailViewController: BaseViewController {
 
@@ -19,9 +20,12 @@ class MovieDetailViewController: BaseViewController {
     
     var movie: Movie?
     
+    let persistance = PersistanceService.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureMovieDetail()
+        addToMyList()
     }
     
     func configureMovieDetail() {
@@ -35,6 +39,10 @@ class MovieDetailViewController: BaseViewController {
             self.durationLabel.text = movie.duration
             self.synopsisTextView.text = movie.synopsis
         }
+    }
+    
+    func addToMyList() {
+        
     }
 
 }
