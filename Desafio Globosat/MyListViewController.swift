@@ -36,12 +36,14 @@ class MyListViewController: BaseViewController, UITableViewDelegate, UITableView
         self.showLoading()
         movies = []
         persistance.fetchMovies { [weak self] (movies) in
-            for movie in movies {
-                self?.movies.append(movie)
-                
-                DispatchQueue.main.async {
-                    self?.myListTableView.reloadData()
+            if movies.count > 0 {
+                for movie in movies {
+                    self?.movies.append(movie)
                 }
+            }
+            
+            DispatchQueue.main.async {
+                self?.myListTableView.reloadData()
             }
             
             self?.hideLoading()

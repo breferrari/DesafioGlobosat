@@ -19,13 +19,36 @@ class MovieDetailViewController: BaseViewController {
     @IBOutlet weak var synopsisTextView: UITextView!
     
     var movie: Movie?
+    var myListMovie: MyListMovie?
     
     let persistance = PersistanceService.shared
+    var isMovieOnMyList = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureMovieDetail()
-        addToMyList()
+        
+        if let movie = movie {
+            isMovieOnMyList = persistance.isMovieOnMyList(name: movie.title)
+            
+            if isMovieOnMyList {
+                persistance.fetchMovieNamed(movie.title, completion: { [weak self] (movies) in
+                    self?.myListMovie = movies.first
+                })
+            }
+        }
+        
+        configureNavigationBar()
+    }
+    
+    func configureNavigationBar() {
+        let barButton: UIBarButtonItem
+        if !isMovieOnMyList {
+            barButton = UIBarButtonItem.init(title: "Add To List", style: UIBarButtonItemStyle.plain, target: self, action: #selector(addToMyList))
+        } else {
+            barButton = UIBarButtonItem.init(title: "Remove From List", style: UIBarButtonItemStyle.plain, target: self, action: #selector(removeFromMyList))
+        }
+        self.navigationItem.rightBarButtonItem = barButton
     }
     
     func configureMovieDetail() {
@@ -42,8 +65,29 @@ class MovieDetailViewController: BaseViewController {
     }
     
     func addToMyList() {
-        let myListMovie = MyListMovie(movie!)
-        persistance.addOrUpdateMovie(myListMovie)
+        if !isMovieOnMyList {
+            if let movie = movie {
+                myListMovie = MyListMovie(movie)
+                
+                if let myListMovie = myListMovie {
+                    persistance.addOrUpdateMovie(myListMovie)
+                    isMovieOnMyList = true
+                    configureNavigationBar()
+                }
+                
+            }
+        }
+    }
+    
+    func removeFromMyList() {
+        if isMovieOnMyList {
+            if let myListMovie = myListMovie {
+                persistance.deleteMovie(myListMovie)
+                self.myListMovie = nil
+                isMovieOnMyList = false
+                configureNavigationBar()
+            }
+        }
     }
 
 }
