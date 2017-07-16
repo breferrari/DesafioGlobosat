@@ -41,7 +41,7 @@ extension MyListMovie {
         duration = movie.duration
         synopsis = movie.synopsis
         if let thumbnailUrl = movie.thumbnail {
-            thumbnail = thumbnailUrl.path
+            thumbnail = "\(thumbnailUrl)"
         }
         didWatch = false
     }
