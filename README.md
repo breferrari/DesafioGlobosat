@@ -7,3 +7,11 @@
 sudo gem install cocoapods
 pod install
 ```
+
+## Acesso
+
+### Login e senha
+```sh
+Login: desafio
+Senha: root
+```
