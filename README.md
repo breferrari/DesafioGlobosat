@@ -15,3 +15,9 @@ pod install
 Login: desafio
 Senha: root
 ```
+
+## Dependências usadas
+- Contentful (JSON)
+- Realm (ORM/Persistência)
+- SDWebImage (Cache e async load de imagens)
+- SVProgressHUD (UI, Indicador de atividade)
