@@ -8,8 +8,10 @@
 
 import UIKit
 
-class LoginViewController: BaseViewController {
+class LoginViewController: BaseViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
@@ -18,6 +20,19 @@ class LoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView.keyboardDismissMode = .onDrag
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if (textField.text == userTextField.text) {
+            passwordTextField.becomeFirstResponder()
+            return true
+        } else if (textField == passwordTextField) {
+            loginAction(loginButton)
+            return true
+        }
+        
+        return false
     }
     
     @IBAction func loginAction(_ sender: UIButton) {
@@ -39,6 +54,7 @@ class LoginViewController: BaseViewController {
             } else {
                 self?.userTextField.text = ""
                 self?.passwordTextField.text = ""
+                self?.view.endEditing(true)
                 self?.showAlertWithMessage("Wrong user or password")
             }
         }
