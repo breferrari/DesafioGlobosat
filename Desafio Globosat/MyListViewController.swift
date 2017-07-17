@@ -58,6 +58,8 @@ class MyListViewController: BaseViewController, UITableViewDelegate, UITableView
         }
     }
     
+    // MARK: UITableViewDelegate, UITableViewDataSource
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "MovieDetailSegue", sender: movies[indexPath.row])
     }

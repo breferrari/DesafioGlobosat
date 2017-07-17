@@ -17,6 +17,7 @@ class PersistanceService: NSObject {
     // MARK: Shared Instance
     static let shared = PersistanceService()
     
+    // MARK: Realm Default Instance
     let realm = try! Realm()
     
     func addOrUpdateMovie(_ movie: MyListMovie) {

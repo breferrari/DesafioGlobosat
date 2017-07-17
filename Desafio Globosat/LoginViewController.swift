@@ -23,18 +23,6 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
         scrollView.keyboardDismissMode = .onDrag
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if (textField.text == userTextField.text) {
-            passwordTextField.becomeFirstResponder()
-            return true
-        } else if (textField == passwordTextField) {
-            loginAction(loginButton)
-            return true
-        }
-        
-        return false
-    }
-    
     @IBAction func loginAction(_ sender: UIButton) {
         
         guard let user = userTextField.text else {
@@ -58,6 +46,19 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
                 self?.showAlertWithMessage("Wrong user or password")
             }
         }
+    }
+    
+    // MARK: UITextFieldDelegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if (textField.text == userTextField.text) {
+            passwordTextField.becomeFirstResponder()
+            return true
+        } else if (textField == passwordTextField) {
+            loginAction(loginButton)
+            return true
+        }
+        
+        return false
     }
 
 }
