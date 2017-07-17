@@ -7,17 +7,16 @@
 //
 
 import XCTest
-import RealmSwift
 @testable import Desafio_Globosat
 
 class MoviesViewControllerTests: XCTestCase {
     
     var moviesViewController: MoviesViewController!
     
-    func testTableViewHasExpectedItemsCount() {
+    override func setUp() {
+        super.setUp()
         
         moviesViewController = MoviesViewController()
-        var movies = moviesViewController.movies
         
         let bundle = Bundle(for: MoviesViewControllerTests.self)
         if let path = bundle.path(forResource: "TestMovies", ofType: "plist") {
@@ -31,13 +30,14 @@ class MoviesViewControllerTests: XCTestCase {
                     movie.synopsis = item["synopsis"] as! String
                     movie.thumbnail = item["thumbnail"] as! String
                     
-                    movies.append(Movie(movie))
+                    moviesViewController.movies.append(Movie(movie))
                 }
             }
         }
-        
-        XCTAssert(movies.count == 3)
-        
+    }
+    
+    func testTableViewHasExpectedItemsCount() {
+        XCTAssert(moviesViewController.movies.count == 3)
     }
     
 }

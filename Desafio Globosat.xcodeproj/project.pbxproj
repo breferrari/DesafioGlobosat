@@ -11,6 +11,7 @@
 		2C172C331F1ACAF9003B8793 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C172C321F1ACAF9003B8793 /* BaseViewController.swift */; };
 		2C172C351F1ACB3E003B8793 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C172C341F1ACB3E003B8793 /* LoginViewController.swift */; };
 		2C172C371F1AD5D6003B8793 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C172C361F1AD5D6003B8793 /* AppManager.swift */; };
+		2C182AED1F1CDE8500C3DCF1 /* MoviesViewControllerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C182AEC1F1CDE8500C3DCF1 /* MoviesViewControllerIntegrationTests.swift */; };
 		2C328B231F1AD956005C0901 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C328B221F1AD956005C0901 /* HomeTabBarController.swift */; };
 		2C328B251F1AD971005C0901 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C328B241F1AD971005C0901 /* MoviesViewController.swift */; };
 		2C328B271F1AD981005C0901 /* MyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C328B261F1AD981005C0901 /* MyListViewController.swift */; };
@@ -57,6 +58,7 @@
 		2C172C321F1ACAF9003B8793 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2C172C341F1ACB3E003B8793 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2C172C361F1AD5D6003B8793 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		2C182AEC1F1CDE8500C3DCF1 /* MoviesViewControllerIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewControllerIntegrationTests.swift; sourceTree = "<group>"; };
 		2C328B221F1AD956005C0901 /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		2C328B241F1AD971005C0901 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		2C328B261F1AD981005C0901 /* MyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyListViewController.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				2CC5B8991F1C458800C9723C /* MoviesViewControllerTests.swift */,
+				2C182AEC1F1CDE8500C3DCF1 /* MoviesViewControllerIntegrationTests.swift */,
 			);
 			name = Cases;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C182AED1F1CDE8500C3DCF1 /* MoviesViewControllerIntegrationTests.swift in Sources */,
 				2CC5B89A1F1C458800C9723C /* MoviesViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
