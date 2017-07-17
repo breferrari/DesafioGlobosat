@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>Movie 1</string>
+		<key>subtitle</key>
+		<string>Action</string>
+		<key>duration</key>
+		<string>2h 31m</string>
+		<key>synopsis</key>
+		<string>Synopsis</string>
+		<key>thumbnail</key>
+		<string>http://image.png</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>2</integer>
+		<key>title</key>
+		<string>Movie 2</string>
+		<key>subtitle</key>
+		<string>Action</string>
+		<key>duration</key>
+		<string>2h 31m</string>
+		<key>synopsis</key>
+		<string>Synopsis</string>
+		<key>thumbnail</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>Movie 3</string>
+		<key>subtitle</key>
+		<string>Action</string>
+		<key>duration</key>
+		<string>2h 31m</string>
+		<key>synopsis</key>
+		<string>Synopsis</string>
+		<key>thumbnail</key>
+		<string>http://image.png</string>
+	</dict>
+</array>
+</plist>

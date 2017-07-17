@@ -23,12 +23,14 @@
 		2C8C675F1F19718F002831E7 /* GlobosatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C675E1F19718F002831E7 /* GlobosatService.swift */; };
 		2C8C67631F1977A5002831E7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C67621F1977A5002831E7 /* Movie.swift */; };
 		2C8C67661F19966B002831E7 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C67651F19966B002831E7 /* AuthenticationService.swift */; };
+		2CC5B89A1F1C458800C9723C /* MoviesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5B8991F1C458800C9723C /* MoviesViewControllerTests.swift */; };
+		2CC5B89C1F1C467000C9723C /* TestMovies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5B89B1F1C467000C9723C /* TestMovies.plist */; };
 		2CC66F5E1F1819EB0053B90C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC66F5D1F1819EB0053B90C /* AppDelegate.swift */; };
 		2CC66F601F1819EB0053B90C /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC66F5F1F1819EB0053B90C /* AuthenticationViewController.swift */; };
 		2CC66F631F1819EB0053B90C /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC66F611F1819EB0053B90C /* Authentication.storyboard */; };
 		2CC66F681F1819EB0053B90C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC66F661F1819EB0053B90C /* LaunchScreen.storyboard */; };
-		2CC66F731F1819EB0053B90C /* Desafio_GlobosatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC66F721F1819EB0053B90C /* Desafio_GlobosatTests.swift */; };
 		2CC66F7E1F1819EB0053B90C /* Desafio_GlobosatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC66F7D1F1819EB0053B90C /* Desafio_GlobosatUITests.swift */; };
+		705D9DD9DC6987FFB9BEFB35 /* Pods_Desafio_GlobosatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DB00CFF17F6B2F6CB29870 /* Pods_Desafio_GlobosatTests.framework */; };
 		F9A026E836EC19F4DF36E24D /* Pods_Desafio_Globosat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A45B9384696B208531D068 /* Pods_Desafio_Globosat.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27DB00CFF17F6B2F6CB29870 /* Pods_Desafio_GlobosatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desafio_GlobosatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C172C2D1F1ACABC003B8793 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2C172C321F1ACAF9003B8793 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2C172C341F1ACB3E003B8793 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 		2C8C675E1F19718F002831E7 /* GlobosatService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobosatService.swift; sourceTree = "<group>"; };
 		2C8C67621F1977A5002831E7 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		2C8C67651F19966B002831E7 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		2CC5B8991F1C458800C9723C /* MoviesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewControllerTests.swift; sourceTree = "<group>"; };
+		2CC5B89B1F1C467000C9723C /* TestMovies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestMovies.plist; sourceTree = "<group>"; };
 		2CC66F5A1F1819EB0053B90C /* Desafio Globosat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio Globosat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC66F5D1F1819EB0053B90C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CC66F5F1F1819EB0053B90C /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +78,6 @@
 		2CC66F671F1819EB0053B90C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CC66F691F1819EB0053B90C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CC66F6E1F1819EB0053B90C /* Desafio GlobosatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desafio GlobosatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CC66F721F1819EB0053B90C /* Desafio_GlobosatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio_GlobosatTests.swift; sourceTree = "<group>"; };
 		2CC66F741F1819EB0053B90C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CC66F791F1819EB0053B90C /* Desafio GlobosatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desafio GlobosatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC66F7D1F1819EB0053B90C /* Desafio_GlobosatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio_GlobosatUITests.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 		97A45B9384696B208531D068 /* Pods_Desafio_Globosat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desafio_Globosat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A083EAAD6216A22BD28C9D5C /* Pods-Desafio Globosat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio Globosat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Desafio Globosat/Pods-Desafio Globosat.release.xcconfig"; sourceTree = "<group>"; };
 		D8F3BA9A9BBAB3C2C92BD534 /* Pods-Desafio Globosat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio Globosat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Desafio Globosat/Pods-Desafio Globosat.debug.xcconfig"; sourceTree = "<group>"; };
+		EB7BFA65C6FAB76CFACCCCE6 /* Pods-Desafio GlobosatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio GlobosatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Desafio GlobosatTests/Pods-Desafio GlobosatTests.release.xcconfig"; sourceTree = "<group>"; };
+		F49CED3A489647D61331C6D9 /* Pods-Desafio GlobosatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio GlobosatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Desafio GlobosatTests/Pods-Desafio GlobosatTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705D9DD9DC6987FFB9BEFB35 /* Pods_Desafio_GlobosatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +215,30 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		2CC5B8961F1C454C00C9723C /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				2CC5B8991F1C458800C9723C /* MoviesViewControllerTests.swift */,
+			);
+			name = Cases;
+			sourceTree = "<group>";
+		};
+		2CC5B8971F1C455800C9723C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2CC5B89B1F1C467000C9723C /* TestMovies.plist */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		2CC5B8981F1C455E00C9723C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CC66F741F1819EB0053B90C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		2CC66F511F1819EB0053B90C = {
 			isa = PBXGroup;
 			children = (
@@ -250,8 +281,9 @@
 		2CC66F711F1819EB0053B90C /* Desafio GlobosatTests */ = {
 			isa = PBXGroup;
 			children = (
-				2CC66F721F1819EB0053B90C /* Desafio_GlobosatTests.swift */,
-				2CC66F741F1819EB0053B90C /* Info.plist */,
+				2CC5B8961F1C454C00C9723C /* Cases */,
+				2CC5B8971F1C455800C9723C /* Data */,
+				2CC5B8981F1C455E00C9723C /* Supporting Files */,
 			);
 			path = "Desafio GlobosatTests";
 			sourceTree = "<group>";
@@ -269,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				97A45B9384696B208531D068 /* Pods_Desafio_Globosat.framework */,
+				27DB00CFF17F6B2F6CB29870 /* Pods_Desafio_GlobosatTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -278,6 +311,8 @@
 			children = (
 				D8F3BA9A9BBAB3C2C92BD534 /* Pods-Desafio Globosat.debug.xcconfig */,
 				A083EAAD6216A22BD28C9D5C /* Pods-Desafio Globosat.release.xcconfig */,
+				F49CED3A489647D61331C6D9 /* Pods-Desafio GlobosatTests.debug.xcconfig */,
+				EB7BFA65C6FAB76CFACCCCE6 /* Pods-Desafio GlobosatTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -309,9 +344,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CC66F851F1819EB0053B90C /* Build configuration list for PBXNativeTarget "Desafio GlobosatTests" */;
 			buildPhases = (
+				C3FEA2BFC39170E03DD47A5F /* [CP] Check Pods Manifest.lock */,
 				2CC66F6A1F1819EB0053B90C /* Sources */,
 				2CC66F6B1F1819EB0053B90C /* Frameworks */,
 				2CC66F6C1F1819EB0053B90C /* Resources */,
+				480FCFAAC592153018C6AAF4 /* [CP] Embed Pods Frameworks */,
+				F3157825A419FDD966148216 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -407,6 +445,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC5B89C1F1C467000C9723C /* TestMovies.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +489,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		480FCFAAC592153018C6AAF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Desafio GlobosatTests/Pods-Desafio GlobosatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9072A03B846D5835ED186BEA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,6 +517,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Desafio Globosat/Pods-Desafio Globosat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3FEA2BFC39170E03DD47A5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3157825A419FDD966148216 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Desafio GlobosatTests/Pods-Desafio GlobosatTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -494,7 +578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC66F731F1819EB0053B90C /* Desafio_GlobosatTests.swift in Sources */,
+				2CC5B89A1F1C458800C9723C /* MoviesViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,8 +750,9 @@
 		};
 		2CC66F861F1819EB0053B90C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F49CED3A489647D61331C6D9 /* Pods-Desafio GlobosatTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = HATQPXT843;
 				INFOPLIST_FILE = "Desafio GlobosatTests/Info.plist";
@@ -681,8 +766,9 @@
 		};
 		2CC66F871F1819EB0053B90C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB7BFA65C6FAB76CFACCCCE6 /* Pods-Desafio GlobosatTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = HATQPXT843;
 				INFOPLIST_FILE = "Desafio GlobosatTests/Info.plist";

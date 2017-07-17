@@ -21,3 +21,7 @@ target 'Desafio Globosat' do
     orm
     networking
 end
+
+target 'Desafio GlobosatTests' do
+    orm
+end
