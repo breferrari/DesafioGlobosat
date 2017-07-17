@@ -30,7 +30,7 @@
       codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
-            skipped = "YES">
+            skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2CC66F6D1F1819EB0053B90C"
